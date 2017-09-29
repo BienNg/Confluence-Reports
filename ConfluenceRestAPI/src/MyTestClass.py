@@ -75,4 +75,6 @@ def printPrettyXML(formatted):
 
 
 if __name__ == '__main__':
-    main()
+    #main()
+    x = "HÄ"
+    print(x.encode().decode())
