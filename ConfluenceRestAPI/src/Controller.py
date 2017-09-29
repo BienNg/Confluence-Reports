@@ -4,6 +4,7 @@ from idna import unicode
 from requests.auth import HTTPBasicAuth
 from bs4 import BeautifulSoup
 from xml.dom.minidom import parseString
+from xml.etree import ElementTree
 
 
 # Class that represents a Table Instance
@@ -94,18 +95,27 @@ class Controller(object):
                             table.__add_data__(content, r, c)
                             c += 1
                         for data in row.getElementsByTagName("td"):
-                            if data.firstChild.nodeName == "structured-macro":
+                            hasColor = False
+                            for tags in data.getElementsByTagName("structured-macro"):
+                                hasColor = True
                                 farbe = "<DOM Text node Grey>"
                                 content = str()
-                                for parameter in data.firstChild.getElementsByTagName("parameter"):
-                                    print(str(parameter.attributes.item(0).value))
+                                for parameter in tags.getElementsByTagName("parameter"):
                                     if (str(parameter.attributes.item(0).value) == "colour"):
                                         farbe = str(parameter.firstChild)
                                     elif (str(parameter.attributes.item(0).value) == "title"):
                                         content = str(parameter.firstChild)
                                 table.__add_data__(content, r, c, farbe)
+                            if hasColor:
+                                # Table Data has color
+                                hasColor = False
                             elif data.firstChild.nodeName == 'p':
                                 content = data.firstChild.firstChild.nodeValue
+                                paramChild = data.firstChild.firstChild
+                                while str(paramChild.nextSibling) != "None":
+                                    paramChild = paramChild.nextSibling
+                                    if (str(paramChild.nodeValue) != "None"):
+                                        content = content + '. ' + str(paramChild.nodeValue);
                                 table.__add_data__(content, r, c)
                             else:
                                 content = data.firstChild.nodeValue
@@ -113,7 +123,7 @@ class Controller(object):
                                 while str(paramChild.nextSibling) != "None":
                                     paramChild = paramChild.nextSibling
                                     if (str(paramChild.nodeValue) != "None"):
-                                        content = content + '. ' + str(paramChild.nodeValue);
+                                        content = content + '. \n' + str(paramChild.nodeValue);
                                 table.__add_data__(str(content), r, c)
                             c += 1
                         r += 1
