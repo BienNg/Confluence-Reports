@@ -2,14 +2,14 @@
 import requests
 from requests.auth import HTTPBasicAuth
 from bs4 import BeautifulSoup
-from src.GetPageInformation import Controller
+from src.Controller import Controller
 
 reports = [Controller("_Produkt-Teststatus Template"),
            Controller("ZEPPELIN FASTRENT - Release 1.0")
            , Controller("ZBVSAPP Zeppelin Lead App-Teststatus")
            , Controller("OWM - Teststatus")
            , Controller("Collection & Accessoires - Teststatus")]
-reports = [Controller("OWM - Teststatus")]
 
+reports = [Controller("ZEPPELIN FASTRENT - Release 1.0")]
 for pi in reports:
-    pi.main()
+    pi.getTables()

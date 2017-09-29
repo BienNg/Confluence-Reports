@@ -50,7 +50,7 @@ class Controller(object):
         self.password = "dmcnbnB1i9e9n64"
         self.table = Table(report_par)
 
-    def main(self):
+    def getTables(self):
         print("X"*500)
         # print report name
         print("Report for " + self.report)
@@ -98,6 +98,7 @@ class Controller(object):
                                 farbe = "<DOM Text node Grey>"
                                 content = str()
                                 for parameter in data.firstChild.getElementsByTagName("parameter"):
+                                    print(str(parameter.attributes.item(0).value))
                                     if (str(parameter.attributes.item(0).value) == "colour"):
                                         farbe = str(parameter.firstChild)
                                     elif (str(parameter.attributes.item(0).value) == "title"):
@@ -107,7 +108,6 @@ class Controller(object):
                                 content = data.firstChild.firstChild.nodeValue
                                 table.__add_data__(content, r, c)
                             else:
-                                content = str()
                                 content = data.firstChild.nodeValue
                                 paramChild = data.firstChild
                                 while str(paramChild.nextSibling) != "None":
@@ -118,4 +118,4 @@ class Controller(object):
                             c += 1
                         r += 1
 
-            print(content_dom.toprettyxml())
+            #print(content_dom.toprettyxml())

@@ -1,0 +1,741 @@
+<?xml version="1.0" ?>
+<layout>
+	<layout-section type="single">
+		<layout-cell>
+			<p>
+				<structured-macro macro-id="ca30c0ab-8867-4db8-81d7-cd6c97736f6a" name="toc" schema-version="1"/>
+			</p>
+			<hr/>
+			<p>Stand: 13.06.2017</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<hr/>
+			<p>&amp;nbsp;</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<h2>1. Gesamt</h2>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="two_equal">
+		<layout-cell>
+			<h3>1.1 Status</h3>
+			<table>
+				<colgroup>
+					<col/>
+					<col/>
+					<col/>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>&amp;nbsp;</th>
+						<th>Status</th>
+						<th>Details</th>
+					</tr>
+					<tr>
+						<td colspan="1">Gesamtstatus</td>
+						<td colspan="1">
+							<div class="content-wrapper">
+								<p>
+									<structured-macro macro-id="bfc0efa0-5e75-499c-8faf-51cbc7e8298d" name="status" schema-version="1">
+										<parameter name="colour">Green</parameter>
+										<parameter name="title"/>
+										<parameter name=""/>
+									</structured-macro>
+								</p>
+							</div>
+						</td>
+						<td colspan="1">
+							<br/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Testfortschritt</p>
+						</td>
+						<td>
+							<structured-macro macro-id="a4a40478-e749-452e-a7ba-1766fb88d360" name="status" schema-version="1">
+								<parameter name="colour">Green</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td>&amp;nbsp;</td>
+					</tr>
+					<tr>
+						<td>Verfügbarkeit / Stabilität</td>
+						<td>
+							<div class="content-wrapper">
+								<p>
+									<structured-macro macro-id="d46477d3-f5b7-4abe-a3ca-836e5289f994" name="status" schema-version="1">
+										<parameter name="colour">Green</parameter>
+										<parameter name="title"/>
+										<parameter name=""/>
+									</structured-macro>
+								</p>
+							</div>
+						</td>
+						<td>
+							<br/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>1.2 Milestones</h3>
+			<table>
+				<colgroup>
+					<col/>
+					<col/>
+					<col/>
+					<col/>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>&amp;nbsp;</th>
+						<th>Milestone</th>
+						<th>Status</th>
+						<th>Kommentar</th>
+					</tr>
+					<tr>
+						<td>20.02.2017</td>
+						<td>Call with the API-Expert, Fastrent</td>
+						<td>
+							<structured-macro macro-id="24a929bb-3658-4ff1-9c1d-3c6495a25bd7" name="status" schema-version="1">
+								<parameter name="colour">Green</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td>&amp;nbsp;</td>
+					</tr>
+					<tr>
+						<td>23.02.2017</td>
+						<td>Rebriefing Zeppelin</td>
+						<td>
+							<structured-macro macro-id="e78b47d0-cc80-47f4-8e75-71d527c3cf02" name="status" schema-version="1">
+								<parameter name="colour">Green</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td>&amp;nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="1">07.03.2017</td>
+						<td colspan="1">Result-Demo 1</td>
+						<td colspan="1">
+							<structured-macro macro-id="7cb846c2-b25a-411a-a4d1-4fe9cb266b0b" name="status" schema-version="1">
+								<parameter name="colour">Green</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td colspan="1">
+							<p>
+								Demo war ein kurzer Einblick in den aktuellen Entwicklungsstand
+								<br/>
+								 Feedback war sehr gut und der Stand auch schon sehr gut!
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="1">24.03.2017</td>
+						<td colspan="1">Result-Demo 2</td>
+						<td colspan="1">
+							<structured-macro macro-id="db3dc468-18e1-448c-9bb8-2cd875cbecb7" name="status" schema-version="1">
+								<parameter name="colour">Green</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td colspan="1">
+							<p>Demo mit Sebastian Wiese. Er ist mit den bisherigen Ergebnissen und dem Stand der Entwicklung sehr zufrieden ist.</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="1">&amp;nbsp;</td>
+						<td colspan="1">Result-Demo 3</td>
+						<td colspan="1">
+							<structured-macro macro-id="81a1cc7b-4bc6-4320-8f27-cb4589eab4cb" name="status" schema-version="1">
+								<parameter name="colour">Grey</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td colspan="1">&amp;nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="1">&amp;nbsp;</td>
+						<td colspan="1">Result-Demo 4</td>
+						<td colspan="1">
+							<structured-macro macro-id="f43c239e-4b48-461e-b630-a8a360171762" name="status" schema-version="1">
+								<parameter name="colour">Grey</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td colspan="1">&amp;nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="1">21.04.2017</td>
+						<td colspan="1">Code Freeze</td>
+						<td colspan="1">
+							<structured-macro macro-id="56a505d1-da70-4788-81d6-6ce49a55c515" name="status" schema-version="1">
+								<parameter name="colour">Grey</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td colspan="1">&amp;nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="1">24.04.2017</td>
+						<td colspan="1">Start Testing and Aceptance</td>
+						<td colspan="1">
+							<structured-macro macro-id="bf3096a5-ef96-42a5-ad31-ed027aaeeb1b" name="status" schema-version="1">
+								<parameter name="colour">Grey</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td colspan="1">&amp;nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="1">02.05.2017</td>
+						<td colspan="1">Start Defect and Re-Test</td>
+						<td colspan="1">
+							<structured-macro macro-id="95e13b98-500e-4126-989a-c2d21f07a172" name="status" schema-version="1">
+								<parameter name="colour">Grey</parameter>
+								<parameter name="title"/>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+						<td colspan="1">&amp;nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="auto-cursor-target">
+				<br/>
+			</p>
+		</layout-cell>
+		<layout-cell>
+			<h3>1.3 Hemmnisse</h3>
+			<p>&amp;nbsp;</p>
+			<table>
+				<colgroup>
+					<col/>
+					<col/>
+					<col/>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>&amp;nbsp;</th>
+						<th>Hemmnis</th>
+						<th>Auswirkung</th>
+					</tr>
+					<tr>
+						<td colspan="1">12.05.2017</td>
+						<td colspan="1">Tests auf LIVE kännen heute nicht stattfinden (Kundensystem ist nicht soweit).</td>
+						<td colspan="1">Tests auf LIVE kännen nur noch am 16.05.2017 statt finden, da am 16.05 Livegang geplant ist.</td>
+					</tr>
+					<tr>
+						<td colspan="1">16.03.2017</td>
+						<td colspan="1">
+							<ol>
+								<li>
+									Meeting mit Roland: 
+									<br/>
+									Es werden zum Teil Funktionalitäten/Templates implementiert, zu denen es keine JIRA Tickets gibt. Diese &amp;Auml;nderungen ergeben sich zum Teil während der Implementierung.
+								</li>
+								<li>Meeting mit Marco (siehe Aktivitäten).</li>
+							</ol>
+							<p style="margin-left: 30.0px;">&amp;nbsp;</p>
+						</td>
+						<td colspan="1">
+							<ol>
+								<li>Templates und Funktionalitäten, welche nicht im JIRA vorhanden sind, fallen aus dem Testscope raus.</li>
+								<li>Anforderungen bzw. Standard des Testmanagements wird aufgrund begrenztem Budget zurück gefahren.</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="1">08.03.2017</td>
+						<td colspan="1">
+							<ol>
+								<li>keine Anforderungen</li>
+								<li>insgesamt 20PT, davon 10 für die Phasen &amp;quot;Start Testing and Aceptance&amp;quot; und &amp;quot;Start Defect and Re-Test&amp;quot;</li>
+								<li>Es wird nicht ein fertiger Shop getestet, sonder das Erzeugen und Konfigurieren/Befüllen von Seiten.</li>
+							</ol>
+						</td>
+						<td colspan="1">
+							<ol>
+								<li>ohne Anforderungen, kein Testkonzept</li>
+								<li>da nur 10 PT für Schreiben der Testfälle, und Abnahme der 53 Stories bleiben, wird auf die Automatisierung verzichtet</li>
+								<li>Somit ist der Testaufwand häher als ursprünglich geschätzt.</li>
+							</ol>
+						</td>
+					</tr>
+					<tr>
+						<td>07.03.2017</td>
+						<td>
+							<ul style="list-style-type: square;">
+								<li>keine Anforderungsdokumente</li>
+								<li>keine Akzeptanzkriterien</li>
+								<li>Basis sind die vom Entwickler erzeugten Stories, welche nicht vom Kunden abgenommen wurden.</li>
+							</ul>
+						</td>
+						<td>
+							<ul style="list-style-type: square;">
+								<li>Es gibt keine vom Kunden definierte und abgenommene Basis für die zu erstellenden Testfälle.</li>
+								<li>Unklare Stories, die Testfälle werden geschrieben nach dem Motto &amp;quot;soll ungefähr so aussehen wie in dem Screenshot&amp;quot;.</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>1.4 Aktivitäten</h3>
+			<table>
+				<colgroup>
+					<col/>
+					<col/>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>&amp;nbsp;</th>
+						<th>
+							<p>Tätigkeit</p>
+						</th>
+					</tr>
+					<tr>
+						<td colspan="1">12.06.2017</td>
+						<td colspan="1">
+							<p>
+								<strong>Zeppelin Fastrent ist LIVE!</strong>
+							</p>
+							<p>Smoke Tests erfolgreich abgeschlossen.</p>
+							<p style="margin-left: 30.0px;">
+								<u>executed tests:</u>
+							</p>
+							<p style="margin-left: 30.0px;">- start page</p>
+							<p style="margin-left: 30.0px;">- footer area</p>
+							<p style="margin-left: 30.0px;">- image slider</p>
+							<p style="margin-left: 30.0px;">- product kategories</p>
+							<p style="margin-left: 30.0px;">- menue</p>
+							<p style="margin-left: 30.0px;">- product overview page</p>
+							<p style="margin-left: 30.0px;">- product detail page</p>
+							<p style="margin-left: 30.0px;">- registration</p>
+							<p style="margin-left: 30.0px;">- login</p>
+							<p style="margin-left: 30.0px;">- my account area:</p>
+							<p style="margin-left: 30.0px;">&amp;nbsp;&amp;nbsp; &amp;nbsp;-&amp;gt; change mydata.html</p>
+							<p style="margin-left: 30.0px;">- search</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="1">17.05.2017</td>
+						<td colspan="1">GoLive wurde verschoben auf den 23.05.2017. Weitere Informationen folgen noch.</td>
+					</tr>
+					<tr>
+						<td colspan="1">12.05.2017</td>
+						<td colspan="1">Geplanten Tests auf dem LIVE System kännen heute nicht stattfinden, das das Kundensystem nicht fertig ist. Telko mit dem Kunden findet am Montag statt.</td>
+					</tr>
+					<tr>
+						<td colspan="1">08.05.2017</td>
+						<td colspan="1">
+							<p>
+								<u>
+									<strong>Aktueller Stand:</strong>
+								</u>
+							</p>
+							<p>Tickets im Test: 5</p>
+							<p>Offene Bugtickets: 7</p>
+							<p>Offene Stories/CRs: 3</p>
+							<p>&amp;nbsp;</p>
+							<p class="with-breadcrumbs">
+								<span style="color: rgb(0,0,0);">
+									<u>
+										<strong>Cut Over Plan (16th May 2017)</strong>
+									</u>
+								</span>
+							</p>
+							<p class="with-breadcrumbs">
+								<span style="color: rgb(0,0,0);">12.05.2017</span>
+								<span style="color: rgb(0,0,0);"> -&amp;gt; Sanity Tests of the production deployment</span>
+							</p>
+							<p class="with-breadcrumbs">
+								<span style="color: rgb(0,0,0);">
+									16.05.2017 -&amp;gt; Sanity Test post go live
+									<u>
+										<br/>
+									</u>
+								</span>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="1">24.04.2017</td>
+						<td colspan="1">
+							<p>
+								<strong>Mail von Beni am Fr 21.04.2017:</strong>
+							</p>
+							<p>I would like to pass the latest feedback from Sebastian Wiese.</p>
+							<p>He would like to thank the entire team for the great project. He is also aware of what we have created within a very short time, scope and budget.</p>
+							<p>&amp;nbsp;</p>
+							<p>
+								<strong>Status Projekt:</strong>
+							</p>
+							<ul style="list-style-type: square;">
+								<li>Ab heute beginnt die Testing und Aceptance Phase.</li>
+								<li>Eine Story liegt noch im Test, da die Bezahlmäglichkeit PayPal noch nicht getestet wurde. Die Testdaten müssen noch von Zeppelin geliefert werden, oder der Kunde führt diesen Testfall selbst durch.</li>
+								<li>Ein Change Request liegt noch im Test: Aufträge verlängern, verkürzen, stornieren</li>
+								<li>Bug Tickets: 29 sind noch offen beziehungsweise im Test</li>
+							</ul>
+							<p>&amp;nbsp;</p>
+							<p>&amp;nbsp;</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="1">11.04.2017</td>
+						<td colspan="1">
+							<p>
+								<strong>Mail von Beni am Fr 07.04.2017 10:18:</strong>
+							</p>
+							<p>Gestern Abend wurde durch Zeppelin die Projektzeitraum (Umsetzung MVP Fastrent) verlängert und dadurch der Go-Live am 02.05 auf den 09.05 verschoben.</p>
+							<p>&amp;nbsp;</p>
+							<p>Milestones angepasst.</p>
+							<p>&amp;nbsp;</p>
+							<p>Noch offene Stories, welche getestet werden kännen:</p>
+							<ul style="list-style-type: square;">
+								<li>16 Stories</li>
+								<li>Stories, welche zum Epic Site Setup, Infrastructure Setup gehären, werden nicht getestet</li>
+							</ul>
+							<p>&amp;nbsp;</p>
+							<p>Offene Bugs, welche noch getestet werden müssen:</p>
+							<ul style="list-style-type: square;">
+								<li>17 Bugs</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="1">20.03.2017</td>
+						<td colspan="1">
+							<p>
+								<u>
+									<strong>Zeitplanung:</strong>
+								</u>
+							</p>
+							<p>
+								Verbleibende Zeit in aXc: 
+								<strong>70h</strong>
+							</p>
+							<ul>
+								<li>Momentane Schätzung: 2h pro Story</li>
+								<li>Zeit für Reporting, Diskussionen: 10h</li>
+								<li>
+									Verbleibende Stories: 33
+									<ul>
+										<li>66h für die Verifikation der restlichen Stories</li>
+									</ul>
+								</li>
+								<li>
+									4 Tage Zeit für Happy Path Szenario, Akzeptanztest
+									<ul>
+										<li>&amp;nbsp; Shop durchtesten (Browser, Devices)</li>
+									</ul>
+								</li>
+								<li>bis zum 21 April</li>
+								<li>danach noch 4 Tage für die Bugfixing- und Retest-Phase</li>
+							</ul>
+							<p>
+								Insgesamt: 66h + 10h + 32h + 32h = 
+								<span style="color: rgb(0,0,0);">
+									<strong>140h</strong>
+								</span>
+							</p>
+							<p>Anmerkung: Positiv geschätzt :-)!</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="1">16.03.2017</td>
+						<td colspan="1">
+							<p>
+								<u>
+									<span style="color: rgb(0,0,0);">Meeting mit Marco: </span>
+								</u>
+							</p>
+							<p>Aufgrund der zur Verfügung stehenden Zeit und des eingeschränkten Budgets wird der Standard des Testmanagements zurück gefahren. Es werden Testfälle zu den einzelnen JIRA Tickets erstellt mit den für den Test notwendigen Informationen, ABER ohne Testschritte.</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="1">14.03.2017</td>
+						<td colspan="1">wenn die Stories bereit zum Testen sind, spreche ich mit den Entwicklern drüber und erstelle parallel die Testfälle</td>
+					</tr>
+					<tr>
+						<td colspan="1">09.03.2017</td>
+						<td colspan="1">Meeting mit Beni, Pushkar, Marco und mir: gemeinsames Verständnis, was den Testscope und das Budget betrifft, gerade gezogen.</td>
+					</tr>
+					<tr>
+						<td colspan="1">08.03.2017</td>
+						<td colspan="1">
+							<ul style="list-style-type: square;">
+								<li>
+									E-Mail an Beni und Pushkar, da es 16 Stories im Status &amp;quot;Geschlossen&amp;quot; gibt. 
+									<br/>
+									Ergebnis: Stories, welche bis zum 07.03.2017 geschlossen wurden, sind nicht Teil des Testscopes.
+								</li>
+								<li>
+									Testfälle für Epic &amp;quot;Page Templates&amp;quot; werden vorerst leer gelassen (Testfälle existieren, aber ohne Testschritte), da es anhand der Stories nahezu unmäglich ist geeignete Testfälle zu schreiben. 
+									<br/>
+									Als Beispiel Story Page Template Contentpage: dieses Template muss in unterschiedlichen Ausprägungen und mit unterschiedlichen Componenten auf den erzeugten Seiten getestet werden.
+									<br/>
+									Diese Testfälle werden ggf. zu einem späteren Zeitpunkt mit Inhalt gefüllt, eventuell erst wenn die Story in den Test geht.
+								</li>
+								<li>Nach Rücksprache mit Marco: bei der Schätzung ist man davon ausgegangen, dass hiermit ein fertiger Shop getestet wird. Aktuell ist es so, dass die &amp;quot;author-lastigen&amp;quot; Aktivitäten getestet werden. Dazu gehären das Anlegen von Seiten basierend auf unterschiedlichen Templates und das anschlie&amp;szlig;ende Befüllen mit den zur Verfügung stehenden Komponenten.</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>07.03.2017</td>
+						<td>
+							<ul style="list-style-type: square;">
+								<li>Projekt Kick Off mit Beni und Pushkar</li>
+								<li>Projekt in Testlink erzeugt</li>
+								<li>53 Testcases erzeugt, erstmal ohne Inhalt</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="auto-cursor-target">
+				<br/>
+			</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<hr/>
+			<p>&amp;nbsp;</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<h2>2. Anforderungen</h2>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<h3>2.0 Anforderungen</h3>
+			<table>
+				<tbody>
+					<tr>
+						<th colspan="1">Datum</th>
+						<th>Anforderung</th>
+						<th>in Story</th>
+						<th>testbar</th>
+						<th>erwartete Testfälle</th>
+					</tr>
+					<tr>
+						<td colspan="1">&amp;nbsp;</td>
+						<td>&amp;nbsp;</td>
+						<td>&amp;nbsp;</td>
+						<td>&amp;nbsp;</td>
+						<td>&amp;nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="1">&amp;nbsp;</td>
+						<td>&amp;nbsp;</td>
+						<td>&amp;nbsp;</td>
+						<td>&amp;nbsp;</td>
+						<td>&amp;nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>*Anforderungen sind eine Bringschuld der Projektmanager/Productowner. Sie sind die Basis des Testkonzepts.</p>
+			<p>&amp;nbsp;</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<h3>2.1 Testdaten</h3>
+			<table>
+				<tbody>
+					<tr>
+						<th>Testdatum</th>
+						<th>Status</th>
+					</tr>
+					<tr>
+						<td>User für Author Modus</td>
+						<td>
+							<structured-macro macro-id="f9cf730c-d4e6-4799-8b49-16f2049af173" name="status" schema-version="1">
+								<parameter name="colour">Green</parameter>
+								<parameter name="title">VORHANDEN</parameter>
+								<parameter name=""/>
+							</structured-macro>
+						</td>
+					</tr>
+					<tr>
+						<td>User für Publish Modus</td>
+						<td>
+							<structured-macro macro-id="059fe802-68cf-469d-a926-2668a25048f9" name="status" schema-version="1">
+								<parameter name="colour">Green</parameter>
+								<parameter name="title">Vorhanden</parameter>
+							</structured-macro>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="auto-cursor-target">
+				<br/>
+			</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<hr/>
+			<p>&amp;nbsp;</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<h2>3.0 Stories</h2>
+			<p>&amp;nbsp;</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<p>
+				<structured-macro macro-id="753257d8-3959-436d-87ef-662c03def191" name="jira" schema-version="1">
+					<parameter name="server">diconium digital solutions GmbH</parameter>
+					<parameter name="columns">key,summary,priority,status,epic link</parameter>
+					<parameter name="maximumIssues">1000</parameter>
+					<parameter name="jqlQuery">project = ZRFAST AND issuetype = story AND fixVersion in (&amp;quot;Version 1.1.0&amp;quot;, &amp;quot;Version 1.0.0&amp;quot;) </parameter>
+					<parameter name="serverId">6552cdb4-95aa-3a4b-b529-98547e54cc75</parameter>
+				</structured-macro>
+			</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<hr/>
+			<p>&amp;nbsp;</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<h2>4.0 Testcases</h2>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<p>Testcases werden gemä&amp;szlig; Absprache mit dem PM aus Zeitgründen nicht erstellt. Testing erfolgt auf Basis von Storyinformationen.</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="two_equal">
+		<layout-cell>
+			<hr/>
+			<p>&amp;nbsp;</p>
+		</layout-cell>
+		<layout-cell>
+			<hr/>
+			<p>&amp;nbsp;</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<h2>5.0 Gefundene Fehler</h2>
+			<p>
+				<structured-macro macro-id="0d5096b2-fd74-474e-957d-6fb44a7c7760" name="jira" schema-version="1">
+					<parameter name="server">diconium digital solutions GmbH</parameter>
+					<parameter name="columns">key,summary,created,updated,priority,status</parameter>
+					<parameter name="maximumIssues">1000</parameter>
+					<parameter name="jqlQuery">issuetype = BUG AND labels = &amp;quot;ZRFAST&amp;quot; </parameter>
+					<parameter name="serverId">6552cdb4-95aa-3a4b-b529-98547e54cc75</parameter>
+				</structured-macro>
+			</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="two_equal">
+		<layout-cell>
+			<p class="auto-cursor-target">
+				<br/>
+			</p>
+			<structured-macro macro-id="947f6ef9-1e80-4f98-b0ae-4002070e5d79" name="panel" schema-version="1">
+				<parameter name="title">Aktueller Status der erstellten Bug-Tickets</parameter>
+				<rich-text-body>
+					<p>
+						<structured-macro macro-id="8ae3a7c6-7f2b-45a8-acbf-abd46134c049" name="jirachart" schema-version="1">
+							<parameter name="border">false</parameter>
+							<parameter name="showinfor">false</parameter>
+							<parameter name="server">diconium digital solutions GmbH</parameter>
+							<parameter name="jql">issuetype%20%3D%20BUG%20AND%20labels%20%3D%20%22ZRFAST%22</parameter>
+							<parameter name="statType">statuses</parameter>
+							<parameter name="chartType">pie</parameter>
+							<parameter name="width">500</parameter>
+							<parameter name="isAuthenticated">true</parameter>
+							<parameter name="serverId">6552cdb4-95aa-3a4b-b529-98547e54cc75</parameter>
+						</structured-macro>
+					</p>
+				</rich-text-body>
+			</structured-macro>
+			<p class="auto-cursor-target">
+				<br/>
+			</p>
+		</layout-cell>
+		<layout-cell>
+			<p class="auto-cursor-target">
+				<br/>
+			</p>
+			<structured-macro macro-id="ab2d9a43-4abe-4694-8151-b7ddb733eef7" name="panel" schema-version="1">
+				<parameter name="title">Aktuelle Priorität der nicht geschlossenen Bug-Tickets</parameter>
+				<rich-text-body>
+					<p>
+						<structured-macro macro-id="d6173cfd-c699-4aea-bdec-1763a4f5b26a" name="jirachart" schema-version="1">
+							<parameter name="border">false</parameter>
+							<parameter name="showinfor">false</parameter>
+							<parameter name="server">diconium digital solutions GmbH</parameter>
+							<parameter name="jql">issuetype%20%3D%20BUG%20AND%20labels%20%3D%20%22ZRFAST%22%20AND%20status%20!%3D%20closed</parameter>
+							<parameter name="statType">priorities</parameter>
+							<parameter name="chartType">pie</parameter>
+							<parameter name="width">500</parameter>
+							<parameter name="isAuthenticated">true</parameter>
+							<parameter name="serverId">6552cdb4-95aa-3a4b-b529-98547e54cc75</parameter>
+						</structured-macro>
+					</p>
+				</rich-text-body>
+			</structured-macro>
+			<p class="auto-cursor-target">
+				<br/>
+			</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<h2>6.0 Meeting Points</h2>
+			<p>
+				<structured-macro macro-id="c443c2a4-e206-4eb0-b1d0-b5230a58a174" name="view-file" schema-version="1">
+					<parameter name="name">
+						<attachment filename="ZRFAST_TM_MeetingPoints.docx"/>
+					</parameter>
+					<parameter name="height">250</parameter>
+				</structured-macro>
+			</p>
+			<p>&amp;nbsp;</p>
+			<p>&amp;nbsp;</p>
+		</layout-cell>
+	</layout-section>
+	<layout-section type="single">
+		<layout-cell>
+			<h2>7.0 Testreport</h2>
+			<p>
+				<structured-macro macro-id="a78ed713-f61c-46e8-a99c-2bb2dd14f914" name="view-file" schema-version="1">
+					<parameter name="name">
+						<attachment filename="ZRFAST_TM_TestProtokoll.docx"/>
+					</parameter>
+					<parameter name="height">250</parameter>
+				</structured-macro>
+			</p>
+		</layout-cell>
+	</layout-section>
+</layout>
