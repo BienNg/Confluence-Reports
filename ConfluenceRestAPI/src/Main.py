@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-import requests
-from requests.auth import HTTPBasicAuth
-from bs4 import BeautifulSoup
-from src.Controller import Controller
+from src.PutContent import PutContent
+from src.Content import Content
+from src.ContentInXML import ContentInXML
 
-reports = [Controller("_Produkt-Teststatus Template"),
-           Controller("ZEPPELIN FASTRENT - Release 1.0")
-           , Controller("ZBVSAPP Zeppelin Lead App-Teststatus")
-           , Controller("OWM - Teststatus")
-           , Controller("Collection & Accessoires - Teststatus")
-           , Controller("MAR2020 - Teststatus")]
+reports = [Content("_Produkt-Teststatus Template"),
+           Content("ZEPPELIN FASTRENT - Release 1.0")
+           , Content("ZBVSAPP Zeppelin Lead App-Teststatus")
+           , Content("OWM - Teststatus")
+           , Content("Collection & Accessoires - Teststatus")
+           , Content("MAR2020 - Teststatus")]
 
-#reports = [Controller("OWM - Teststatus")]
-for pi in reports:
-    pi.getTables()
+reports = [ContentInXML("OWM - Teststatus")]
+reports[0].getTables()
+
+PutContent(reports[0].table).put_content()

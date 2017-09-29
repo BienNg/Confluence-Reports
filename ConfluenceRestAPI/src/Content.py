@@ -39,12 +39,12 @@ class Cell(object):
             print(self.content)
 
 
-# ------------- This Class prints the wanted tables of a given page IN HTML------------------
-class Controller(object):
+# ------------- This Class Reads the wanted Data of a given page IN HTML and stores them in a Table object------------------
+class Content(object):
     def __init__(self, report_par):
         self.report = report_par
         self.username = "nguyenhi"
-        self.password = "dmcnbnB1i9e9n64"
+        self.password = "dmcnbnB1i9e9n65"
         self.table = Table(report_par)
 
     def getTables(self):
@@ -53,10 +53,11 @@ class Controller(object):
         print("Report for " + self.report)
 
         expandableContent = "&expand=body.storage"
+        payload = {'spacekey':'Testmanagement', 'title':self.report.replace("&", "%26"), 'expand':'body.storage'}
         url = "https://confluence.diconium.com/rest/api/content?spacekey=Testmanagement&title=" + self.report.replace("&", "%26") + expandableContent
         # get to the website of the wanted report
         response = requests.get(url,auth=HTTPBasicAuth(self.username, self.password))
-
+        print(response.url)
         if response.status_code == 200:
             # store the full json data of the report
             json_data = response.json()
