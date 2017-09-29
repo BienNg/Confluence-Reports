@@ -8,8 +8,9 @@ reports = [Controller("_Produkt-Teststatus Template"),
            Controller("ZEPPELIN FASTRENT - Release 1.0")
            , Controller("ZBVSAPP Zeppelin Lead App-Teststatus")
            , Controller("OWM - Teststatus")
-           , Controller("Collection & Accessoires - Teststatus")]
+           , Controller("Collection & Accessoires - Teststatus")
+           , Controller("MAR2020 - Teststatus")]
 
-reports = [Controller("OWM - Teststatus")]
+#reports = [Controller("OWM - Teststatus")]
 for pi in reports:
     pi.getTables()

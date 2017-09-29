@@ -54,7 +54,6 @@ def main():
                     elif data.firstChild.nodeName == 'p':
                             print(data.firstChild.firstChild.nodeValue)
                     else:
-                        inhalt = str()
                         inhalt = (data.firstChild.nodeValue)
                         paramChild = data.firstChild
                         while str(paramChild.nextSibling) != "None":

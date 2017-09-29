@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 import requests
-from idna import unicode
 from requests.auth import HTTPBasicAuth
-from bs4 import BeautifulSoup
 from xml.dom.minidom import parseString
-from xml.etree import ElementTree
-
 
 # Class that represents a Table Instance
 class Table(object):
@@ -29,7 +25,7 @@ class Table(object):
 class Cell(object):
     def __init__(self, content, color = None):
         if color == None:
-            self.content = content
+            self.content = content.replace("&amp;", "&").replace("&nbsp;", "None")
             self.hasColor = False
         else:
             self.content = content
@@ -38,9 +34,9 @@ class Cell(object):
 
     def __print_content__(self):
         if self.hasColor:
-            print("This cell contains: " + self.content + " with the color: " + self.color)
+            print(self.content + " with the color: " + self.color)
         else:
-            print("This cell contains " + self.content)
+            print(self.content)
 
 
 # ------------- This Class prints the wanted tables of a given page IN HTML------------------
@@ -52,7 +48,7 @@ class Controller(object):
         self.table = Table(report_par)
 
     def getTables(self):
-        print("X"*500)
+        print("X"*200)
         # print report name
         print("Report for " + self.report)
 
@@ -115,7 +111,7 @@ class Controller(object):
                                 while str(paramChild.nextSibling) != "None":
                                     paramChild = paramChild.nextSibling
                                     if (str(paramChild.nodeValue) != "None"):
-                                        content = content + '. ' + str(paramChild.nodeValue);
+                                        content = content + '\n' + str(paramChild.nodeValue);
                                 table.__add_data__(content, r, c)
                             else:
                                 content = data.firstChild.nodeValue
@@ -123,7 +119,7 @@ class Controller(object):
                                 while str(paramChild.nextSibling) != "None":
                                     paramChild = paramChild.nextSibling
                                     if (str(paramChild.nodeValue) != "None"):
-                                        content = content + '. \n' + str(paramChild.nodeValue);
+                                        content = content + '\n' + str(paramChild.nodeValue);
                                 table.__add_data__(str(content), r, c)
                             c += 1
                         r += 1
