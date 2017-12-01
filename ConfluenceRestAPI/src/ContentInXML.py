@@ -13,6 +13,7 @@ class ContentInXML(object):
         self.report = report_par
         self.username = "nguyenhi"
         self.password = "dmcnbnB1i9e9n65"
+        self.table_name = str()
         self.table = str()
 
     def getTables(self):

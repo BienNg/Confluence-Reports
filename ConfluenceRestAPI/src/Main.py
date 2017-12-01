@@ -13,4 +13,5 @@ reports = [Content("_Produkt-Teststatus Template"),
 reports = [ContentInXML("OWM - Teststatus")]
 reports[0].getTables()
 
-PutContent(reports[0].table).put_content()
+for report in reports:
+    PutContent(report).put_content()

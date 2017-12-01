@@ -1,11 +1,14 @@
 import requests
 from requests.auth import HTTPBasicAuth
 import json
+from src.ContentInXML import ContentInXML
 
 class PutContent(object):
 
-    def __init__(self,table_par):
-        self.table = table_par.replace("&amp;nbsp;" , "")
+    def __init__(self,content):
+        self.content = content
+        self.table = content.table.replace("&amp;nbsp;" , "")
+        self.table_name = content.report
         self.username = "nguyenhi"
         self.password = "dmcnbnB1i9e9n65"
 
@@ -14,6 +17,8 @@ class PutContent(object):
         response = requests.get(url + "?expand=version",auth=HTTPBasicAuth(self.username, self.password))
         json_data = response.json()
         version = (json_data['version']['number'])
+
+
         payload = \
             {
                 "version":{
