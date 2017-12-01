@@ -1,16 +1,17 @@
 import requests
 import logging
 from requests.auth import HTTPBasicAuth
+import getpass
 
 """ This class gets the wanted information of every report which was created by the ReadContent class and updates the Übersicht-Page in confluence.
 """
 class PutContent(object):
 
     # This method is called when the class object is initialized.
-    def __init__(self, reports):
+    def __init__(self, reports, access):
         self.reports = reports
-        self.username = ""
-        self.password = ""
+        self.username = "nguyenhi"
+        self.password = "nbnB1i9e9n65"
 
         # content contains the HTML of the Übersicht-Page
         self.content = str()
@@ -27,7 +28,10 @@ class PutContent(object):
 
         # Request access to confluence with the username and password
         response = requests.get(url + "?expand=version",auth=HTTPBasicAuth(self.username, self.password))
-
+        if (response == 200):
+            print("PutContent.response.status_code == 200: Get Request OK.")
+        else:
+            print("PutContent.response.status_code != 200: Get Request Failed.")
 
         json_data = response.json()
 
@@ -51,6 +55,6 @@ class PutContent(object):
             }
         response = requests.put(url, auth=HTTPBasicAuth(self.username, self.password), json=payload)
         if(response == 200):
-            logging.debug("PutContent.response = OK")
+            print("PutContent.response.status_code == 200: Put Request OK.")
         else:
             print("PutContent.response.status_code != 200: Put Request Failed.")

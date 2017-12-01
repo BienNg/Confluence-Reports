@@ -3,6 +3,7 @@ import requests
 import logging
 from requests.auth import HTTPBasicAuth
 from xml.dom import expatbuilder
+import getpass
 
 logging.basicConfig(filename='test.log', level=logging.DEBUG)
 
@@ -11,9 +12,9 @@ logging.basicConfig(filename='test.log', level=logging.DEBUG)
 class ReadContent(object):
 
     # This method is called when the class object is initialized.
-    def __init__(self, report_name, tables):
-        self.username = ""
-        self.password = ""
+    def __init__(self, report_name, tables, access):
+        self.username = access[0]
+        self.password = access[1]
         self.report_name = report_name
         self.tables = tables
 
@@ -33,6 +34,8 @@ class ReadContent(object):
 
         # checking of the request is ok(200)
         if response.status_code == 200:
+
+            print("ReadContent.response.status_code == 200: Get Request Ok.")
 
             # Store the full json data of the report in json_data
             json_data = response.json()
