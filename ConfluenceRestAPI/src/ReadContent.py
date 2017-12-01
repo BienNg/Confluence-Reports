@@ -11,10 +11,11 @@ logging.basicConfig(filename='test.log', level=logging.DEBUG)
 class ReadContent(object):
 
     # This method is called when the class object is initialized.
-    def __init__(self, report_name):
+    def __init__(self, report_name, tables):
         self.username = "nguyenhi"
         self.password = "dmcnbnB1i9e9n65"
         self.report_name = report_name
+        self.tables = tables
 
         # In the table variable the status table of the report is stored.
         self.table = str()
@@ -47,11 +48,15 @@ class ReadContent(object):
                 .replace("&", "&amp;")\
                 ;
 
-            # Parseing the formatted string to an xml dom object
+            # Parsing the formatted string to an xml dom object
             content_dom = expatbuilder.parseString(formatted, False)
 
-            # Reading 1.1 Status with its table content and store it to table
+            # Iterating through all headlines to look for the wanted tables
             for element in content_dom.getElementsByTagName("h3"):
-                if (element.firstChild.nodeValue == "1.1 Status"):
-                    # here lies the table that is needed
-                    self.table = element.nextSibling.toprettyxml()
+
+                for table in tables:
+
+                    # Searching for the wanted table
+                    if (element.firstChild.nodeValue == table):
+                        # If name of the table is found, the table itself is stored as XML in the variable table
+                        self.table += element.nextSibling.toprettyxml()
