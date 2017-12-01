@@ -9,8 +9,8 @@ class PutContent(object):
     # This method is called when the class object is initialized.
     def __init__(self, reports):
         self.reports = reports
-        self.username = "nguyenhi"
-        self.password = "dmcnbnB1i9e9n65"
+        self.username = ""
+        self.password = ""
 
         # content contains the HTML of the Übersicht-Page
         self.content = str()
@@ -34,7 +34,7 @@ class PutContent(object):
         # Getting the current version of the Übersicht-Page
         version = (json_data['version']['number'])
 
-
+        # Updating the new Übersicht-Page if the access information is right
         payload = \
             {
                 "version":{
@@ -49,8 +49,8 @@ class PutContent(object):
                     }
                 }
             }
-
-        # Updating the new Übersicht-Page if the access information is right
         response = requests.put(url, auth=HTTPBasicAuth(self.username, self.password), json=payload)
         if(response == 200):
             logging.debug("PutContent.response = OK")
+        else:
+            print("PutContent.response.status_code != 200: Put Request Failed.")

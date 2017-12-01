@@ -12,8 +12,8 @@ class ReadContent(object):
 
     # This method is called when the class object is initialized.
     def __init__(self, report_name, tables):
-        self.username = "nguyenhi"
-        self.password = "dmcnbnB1i9e9n65"
+        self.username = ""
+        self.password = ""
         self.report_name = report_name
         self.tables = tables
 
@@ -37,7 +37,7 @@ class ReadContent(object):
             # Store the full json data of the report in json_data
             json_data = response.json()
 
-            # Storing the content of the report
+            # Storing the whole XML content of the report
             content_of_page = json_data['results'][0]['body']['storage']['value']
 
             # Removing prefix ac and "&" symbol from the xml content of the website
@@ -53,10 +53,11 @@ class ReadContent(object):
 
             # Iterating through all headlines to look for the wanted tables
             for element in content_dom.getElementsByTagName("h3"):
-
                 for table in tables:
-
                     # Searching for the wanted table
                     if (element.firstChild.nodeValue == table):
-                        # If name of the table is found, the table itself is stored as XML in the variable table
-                        self.table += "<h3>" + table + "</h3>"+ element.nextSibling.toprettyxml()
+                        # If name of the table is found, the table itself including its name
+                        # is appended as XML to the variable table
+                        self.table += "<h3>" + table[3:len(table)] + "</h3>"+ element.nextSibling.toprettyxml()
+        else:
+            print("ReadContent.response.status_code != 200: Get Request Failed.")
