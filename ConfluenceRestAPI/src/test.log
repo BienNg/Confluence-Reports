@@ -43,3 +43,65 @@ DEBUG:chardet.charsetprober:ISO-8859-9 Turkish confidence = 0.6083143991262374
 DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
 DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
 DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=OWM%20-%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=Collection%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=MAR2020%20-%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=ZBVSAPP%20Zeppelin%20Lead%20App-Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=ZEPPELIN%20FASTRENT%20-%20Release%201.0&expand=body.storage HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content/46874887?expand=version HTTP/1.1" 200 None
+DEBUG:chardet.charsetprober:EUC-JP Japanese prober hit error at byte 60
+DEBUG:chardet.charsetprober:EUC-KR Korean prober hit error at byte 60
+DEBUG:chardet.charsetprober:EUC-TW Taiwan prober hit error at byte 59
+DEBUG:chardet.charsetprober:utf-8  confidence = 0.505
+DEBUG:chardet.charsetprober:SHIFT_JIS Japanese confidence = 0.01
+DEBUG:chardet.charsetprober:EUC-JP not active
+DEBUG:chardet.charsetprober:GB2312 Chinese confidence = 0.01
+DEBUG:chardet.charsetprober:EUC-KR not active
+DEBUG:chardet.charsetprober:CP949 Korean confidence = 0.01
+DEBUG:chardet.charsetprober:Big5 Chinese confidence = 0.01
+DEBUG:chardet.charsetprober:EUC-TW not active
+DEBUG:chardet.charsetprober:windows-1251 Russian confidence = 0.01
+DEBUG:chardet.charsetprober:KOI8-R Russian confidence = 0.01
+DEBUG:chardet.charsetprober:ISO-8859-5 Russian confidence = 0.01
+DEBUG:chardet.charsetprober:MacCyrillic Russian confidence = 0.01
+DEBUG:chardet.charsetprober:IBM866 Russian confidence = 0.01
+DEBUG:chardet.charsetprober:IBM855 Russian confidence = 0.01
+DEBUG:chardet.charsetprober:ISO-8859-7 Greek confidence = 0.01
+DEBUG:chardet.charsetprober:windows-1253 Greek confidence = 0.01
+DEBUG:chardet.charsetprober:ISO-8859-5 Bulgairan confidence = 0.01
+DEBUG:chardet.charsetprober:windows-1251 Bulgarian confidence = 0.01
+DEBUG:chardet.charsetprober:TIS-620 Thai confidence = 0.01
+DEBUG:chardet.charsetprober:ISO-8859-9 Turkish confidence = 0.5852305956465936
+DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
+DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
+DEBUG:chardet.charsetprober:windows-1255 Hebrew confidence = 0.0
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=OWM%20-%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=Collection%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=MAR2020%20-%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=ZBVSAPP%20Zeppelin%20Lead%20App-Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=ZEPPELIN%20FASTRENT%20-%20Release%201.0&expand=body.storage HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content/46874887?expand=version HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "PUT /rest/api/content/46874887 HTTP/1.1" 200 None
