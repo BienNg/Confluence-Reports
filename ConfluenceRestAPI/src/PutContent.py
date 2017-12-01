@@ -1,19 +1,24 @@
 import requests
 from requests.auth import HTTPBasicAuth
-import json
-from src.ContentInXML import ContentInXML
 
 class PutContent(object):
 
-    def __init__(self,content):
-        self.content = content
-        self.table = content.table.replace("&amp;nbsp;" , "")
-        self.table_name = content.report
+    def __init__(self, reports):
+        self.reports = reports
         self.username = "nguyenhi"
         self.password = "dmcnbnB1i9e9n65"
 
+        self.content = str()
+        i = 0
+        for report in reports:
+            i += 1
+            self.content += "<h3>1." + str(i)+ " " + report.report_name +"</h3>"\
+                       + report.table.replace("&amp;nbsp;", "").replace("&amp;", "&")
+
     def put_content(self):
+        # PageID of the "Übericht"-Page
         url = "https://confluence.diconium.com/rest/api/content/46874887"
+
         response = requests.get(url + "?expand=version",auth=HTTPBasicAuth(self.username, self.password))
         json_data = response.json()
         version = (json_data['version']['number'])
@@ -28,12 +33,12 @@ class PutContent(object):
                 "type": "page",
                 "body":{
                     "storage":{
-                        "value":self.table,
-                          "representation":"storage"
+                        "value": "<h2>1. Status</h2>"
+                                 + self.content,
+                        "representation":"storage"
                     }
                 }
             }
-        #payload = {'type': 'page', 'title': 'new page',"ancestors":[{"id":46874887}],'space':{'key':'Testmanagement'},"body":{"storage":{'value':"<p>This is a new page</p>",'representation':'storage'}}}
         # get to the website of the wanted report
         response = requests.put(url, auth=HTTPBasicAuth(self.username, self.password), json=payload)
         print(response)

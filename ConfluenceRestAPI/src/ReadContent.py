@@ -1,29 +1,25 @@
 # -*- coding: utf-8 -*-
 import requests
+import logging
 from requests.auth import HTTPBasicAuth
 from xml.dom.minidom import parseString
 from xml.dom import expatbuilder
 
-# Class that represents a Table Instance
-
+logging.basicConfig(filename='test.log', level=logging.DEBUG)
 
 # ------------- This Class Reads the wanted Data of a given page IN HTML and stores them in a Table object------------------
-class ContentInXML(object):
-    def __init__(self, report_par):
-        self.report = report_par
+class ReadContent(object):
+    def __init__(self, report_name):
+        self.report_name = report_name
         self.username = "nguyenhi"
         self.password = "dmcnbnB1i9e9n65"
-        self.table_name = str()
         self.table = str()
 
-    def getTables(self):
-        print("X"*200)
-        # print report name
-        print("Report for " + self.report)
+        logging.debug("ReadContent.getTables() started")
 
         expandableContent = "&expand=body.storage"
-        payload = {'spacekey':'Testmanagement', 'title':self.report.replace("&", "%26"), 'expand':'body.storage'}
-        url = "https://confluence.diconium.com/rest/api/content?spacekey=Testmanagement&title=" + self.report.replace("&", "%26") + expandableContent
+        payload = {'spacekey':'Testmanagement', 'title':self.report_name.replace("&", "%26"), 'expand': 'body.storage'}
+        url = "https://confluence.diconium.com/rest/api/content?spacekey=Testmanagement&title=" + self.report_name.replace("&", "%26") + expandableContent
         # get to the website of the wanted report
         response = requests.get(url,auth=HTTPBasicAuth(self.username, self.password))
         if response.status_code == 200:
@@ -43,7 +39,7 @@ class ContentInXML(object):
             # parse the formatted string to an xml dom object
             content_dom = expatbuilder.parseString(formatted, False)
 
-            # 1.1 Status with its table content
+            # reading 1.1 Status with its table content and store it to table
             for element in content_dom.getElementsByTagName("h3"):
                 if (element.firstChild.nodeValue == "1.1 Status"):
                     self.table = element.nextSibling.toprettyxml()
