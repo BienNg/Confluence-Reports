@@ -124,3 +124,41 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.dicon
 DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content/46874887?expand=version HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
 DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "PUT /rest/api/content/46874887 HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of OWM - Teststatus started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=OWM%20-%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of Collection Teststatus started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=Collection%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of MAR2020 - Teststatus started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=MAR2020%20-%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of ZBVSAPP Zeppelin Lead App-Teststatus started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=ZBVSAPP%20Zeppelin%20Lead%20App-Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of ZEPPELIN FASTRENT - Release 1.0 started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=ZEPPELIN%20FASTRENT%20-%20Release%201.0&expand=body.storage HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content/46874887?expand=version HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "PUT /rest/api/content/46874887 HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of OWM - Teststatus started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=OWM%20-%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of Collection Teststatus started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=Collection%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of MAR2020 - Teststatus started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=MAR2020%20-%20Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of ZBVSAPP Zeppelin Lead App-Teststatus started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=ZBVSAPP%20Zeppelin%20Lead%20App-Teststatus&expand=body.storage HTTP/1.1" 200 None
+DEBUG:root:ReadContent.getTables() of ZEPPELIN FASTRENT - Release 1.0 started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content?spacekey=Testmanagement&title=ZEPPELIN%20FASTRENT%20-%20Release%201.0&expand=body.storage HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "GET /rest/api/content/46874887?expand=version HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): confluence.diconium.com
+DEBUG:urllib3.connectionpool:https://confluence.diconium.com:443 "PUT /rest/api/content/46874887 HTTP/1.1" 200 None

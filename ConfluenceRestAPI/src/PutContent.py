@@ -17,7 +17,7 @@ class PutContent(object):
         i = 0
         for report in reports:
             i += 1
-            self.content += "<h3>1." + str(i)+ " " + report.report_name +"</h3>"\
+            self.content += "<h2>" + str(i)+ ". " + report.report_name +"</h2>"\
                        + report.table.replace("&amp;nbsp;", "").replace("&amp;", "&")
 
     # This method updated the Übersicht-Page
@@ -44,8 +44,7 @@ class PutContent(object):
                 "type": "page",
                 "body":{
                     "storage":{
-                        "value": "<h2>1. Status</h2>"
-                                 + self.content,
+                        "value": self.content,
                         "representation":"storage"
                     }
                 }

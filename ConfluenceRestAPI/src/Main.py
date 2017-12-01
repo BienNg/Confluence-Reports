@@ -2,10 +2,11 @@
 from src.PutContent import PutContent
 from src.ReadContent import ReadContent
 
-""" This is the starting class of the Script.
-A reports list is created where all the wanted Confluence pages is stored.
+""" This class starts the script
+A reports list is created where all the wanted Confluence pages are stored.
 Then this list is parsed to the PutContent class where the new Übersicht-Page is updated.
 """
+
 # All tables that are listed in here are added to the Übersicht-Page if they exist
 tables = [
     "1.1 Status",

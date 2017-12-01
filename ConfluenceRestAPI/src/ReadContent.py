@@ -59,4 +59,4 @@ class ReadContent(object):
                     # Searching for the wanted table
                     if (element.firstChild.nodeValue == table):
                         # If name of the table is found, the table itself is stored as XML in the variable table
-                        self.table += element.nextSibling.toprettyxml()
+                        self.table += "<h3>" + table + "</h3>"+ element.nextSibling.toprettyxml()
